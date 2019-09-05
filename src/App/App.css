@@ -1,0 +1,47 @@
+.App {
+  text-align: center;
+  font-size: 25px;
+}
+
+.App-logo {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  margin-right: -50%;
+  transform: translate(-50%, -50%);
+  animation: App-logo-spin infinite 1s linear;
+  height: 10vmin;
+  pointer-events: none;
+}
+
+@keyframes App-logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+.Button {
+  height: 60px;
+  width: 110px;
+  font-size: 20px;
+  border: 3px solid BurlyWood;
+  background-color: Bisque;
+  border-radius: 10px;
+}
+
+.Button:focus {
+  outline: 0;
+}
+
+.Load-error {
+  color: red;
+  font-weight: 700;
+}
+
+.Load-success {
+  color: navy;
+  font-weight: 700;
+}
