@@ -16,7 +16,7 @@ const App = (props) => {
         ? <img src={logo} className="App-logo" alt="logo" />
         : error
           ? <p className='Load-error'>Error, something went wrong</p>
-          : <p className='Load-success'>{array.join(' ')}</p>}
+          : <p className='Load-success'>{`${array.slice(0, -1).join(' ')}${array.slice(-1)}`}</p>}
     </div>
   )
 }
