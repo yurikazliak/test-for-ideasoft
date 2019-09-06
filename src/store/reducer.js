@@ -14,7 +14,7 @@ export default (state = initialState, action) => {
       };
     case 'REQUESTED_ARRAY_SUCCEEDED':
       return {
-        array: ['This', ...action.array.slice(1)],
+        array: ['This', ...action.array.slice(1), '.'],
         loading: false,
         error: false,
       };
