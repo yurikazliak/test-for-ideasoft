@@ -18,7 +18,7 @@ class App extends Component {
           ? <img src={logo} className="App-logo" alt="logo" />
           : this.props.error
             ? <p className='Load-error'>Error, something went wrong</p>
-            : <p className='Load-success'>{this.props.array.join(' ')}</p>}
+            : <p className='Load-success'>{`${this.props.array.join(' ')}.`}</p>}
       </div>
     )
   }
