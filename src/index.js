@@ -5,9 +5,9 @@ import { Provider, connect } from 'react-redux';
 import App from './App/App';
 import store from './store/store';
 
-const ConnectedApp = connect((state) => {
-  return state;
-})(App);
+const mapState = (state) => state;
+
+const ConnectedApp = connect(mapState)(App);
 
 ReactDOM.render(
   <Provider store={store}>
